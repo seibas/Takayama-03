@@ -5,9 +5,15 @@
  */
 
 module.exports = {
+
+
+
+
+  
   /* Your site config here */
   plugins: [
         {
+          
        resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],

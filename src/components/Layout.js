@@ -1,6 +1,7 @@
   
 import React from "react"
 import { Link } from "gatsby"
+import Footer from "../components/Footer"
 import "../styles/style.css"
 
 
@@ -30,6 +31,7 @@ export default function Layout({ children }) {
         </ul>
       </header>
       {children}
+      <Footer />
     </div>
   )
 }
