@@ -22,7 +22,10 @@ background-color: rgb(247, 243, 238);
 
 }
 
-
+p{
+  background-color: black;
+  color: rgb(247, 141, 54);
+}
 img {
   max-width: 100%;
   height: auto;
