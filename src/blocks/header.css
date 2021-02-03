@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    width: 100vw;
+       display: flex;
+       min-height: 3vh;
+       flex-direction: column;
+       background: black;
+     
+       color:rgb(255, 156, 64);
+       position: absolute;
+       top: 0;
+       left: 0;
+   
+   }
