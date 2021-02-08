@@ -1,6 +1,6 @@
 ---
-date: "2021-02-09"
-title: "Game Night at the Lodge: Scythe"
+date: "2021-02-11"
+title: "Game Night third"
 category: "game night"
 ---
 

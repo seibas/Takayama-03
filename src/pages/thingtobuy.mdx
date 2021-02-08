@@ -4,9 +4,31 @@
 title: "Events"
 ---
 
+import {Link} from "gatsby"
+
+<ul>
+  {props.data.allMdx.nodes.map(node => (
+    <li key={node.id}>
+      <Link to={node.fields.slug}>{node.frontmatter.title}</Link> (
+      {node.frontmatter.date}) - {node.excerpt}
+    </li>
+  ))}
+</ul>
 
 
-- bfwidfhipw
-- gdugewdf*gujguyif*
-- uhsgvcuer
-
+export const pageQuery = graphql`
+query {
+  allMdx(limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
+    nodes {
+      excerpt
+      slug
+      frontmatter {
+        title
+        category
+        date
+      }
+      id
+    }
+  }
+}
+`

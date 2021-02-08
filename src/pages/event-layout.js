@@ -9,6 +9,7 @@ export default ({ data: { mdx } }) => {
     <Layout>
       <h3>Name: {mdx.frontmatter.title}</h3>
       <h3>Date: {mdx.frontmatter.date}</h3>
+      <h3>Category: {mdx.frontmatter.category}</h3>
       <MDXRenderer>{mdx.body}</MDXRenderer>
     </Layout>
   )
@@ -21,6 +22,7 @@ export const pageQuery = graphql`
       frontmatter {
         date
         title
+        category
       }
       id
     }

@@ -1,10 +1,10 @@
 ---
 date: "2021-02-09"
-title: "Game Night at the Lodge: Scythe"
-category: "game night"
+title: "The Hotel stay close "
+category: "Day off"
 ---
 
-**Game Night: Thor**
+**All staff in Vacation**
 
 
 Join as at lodge to learn moore about the new game "Thor".
