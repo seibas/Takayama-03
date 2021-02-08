@@ -6,6 +6,12 @@
 
 module.exports = {
 
+  siteMetadata: {
+    title: "BeBa",
+    description: "webSite - in development",
+    author: "Sebastiano Vitturi",
+  },
+
 
 
 

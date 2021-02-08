@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-
-
+import { useStaticQuery, graphql } from "gatsby"
 
 
 const FooterRaper = styled.div`
@@ -21,10 +20,27 @@ left:0;
 
 `
 
+
 const Footer = () => {
+
+const data = useStaticQuery(
+    graphql`
+
+query {
+  site {
+    siteMetadata {
+      title
+       description
+    }
+  }
+}
+`
+)
     return (
         <FooterRaper>
             <p>This is the Footer</p>
+            <h2 className={ 'title' }> {data.site.siteMetadata.title}</h2>
+            <h2 className={ 'description' }> {data.site.siteMetadata.description}</h2>
         </FooterRaper>
       
     )
