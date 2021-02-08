@@ -11,6 +11,7 @@ const about = () => {
      
         <Layout>
             <h1>I am about page</h1>
+            <p></p>
         </Layout>
     )
 }

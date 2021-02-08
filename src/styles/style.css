@@ -27,7 +27,7 @@ background-color: var(--background-color);
 }
 
 p{
-  background-color: black;
+  background-color: rgb(2, 2, 2);
   color: var(--text-color);
 }
 img {

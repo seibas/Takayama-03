@@ -18,6 +18,13 @@ module.exports = {
   
   /* Your site config here */
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+name: `events`,
+path:`${__dirname}/contents/events/`,
+      },
+    },
         {
           
        resolve: `gatsby-plugin-mdx`,
