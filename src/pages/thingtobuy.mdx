@@ -4,7 +4,7 @@
 title: "Events"
 ---
 
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
 <ul>
   {props.data.allMdx.nodes.map(node => (
@@ -21,7 +21,9 @@ query {
   allMdx(limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
     nodes {
       excerpt
-      slug
+      fields {
+        slug
+      }
       frontmatter {
         title
         category
