@@ -1,10 +1,12 @@
 import React from 'react'
+import { graphql } from "gatsby"
+import Image from "gatsby-image"
 import styled from "styled-components"
 import Layout from '../components/Layout'
 import nature from "../images/nature.jpg"
 
 
-const NatureImage = styled.img`
+const NatureImage = styled(Image)`
 display:grid;
 margin-left:auto;
 margin-right:auto;
@@ -18,7 +20,7 @@ max-width: 400px;
 `
 
 
-const index = () => {
+const index = ({ data }) => {
   return (
     
     <Layout>
@@ -29,9 +31,33 @@ const index = () => {
       <span class="change">o</span>
       <span class="change">m</span>
       <span class="change">e</span>  
-       <NatureImage src={"nature2.jpg"} alt="Nature" />
+       <NatureImage fluid={data.file.childImageSharp.fluid} alt="Nature" />
+       <p>Welcome to {data.site.siteMetadata.title}!</p>
    </Layout>
   )
 }
+
+
+
+
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    file(relativePath: { eq: "../images/nature.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+
 
 export default index

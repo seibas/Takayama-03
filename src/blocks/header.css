@@ -5,7 +5,7 @@
    align-items: center;
     width: 100vw;
        display: flex;
-       min-height: 7vh;
+       min-height: 3vh;
        flex-direction: column;
        background: black;
      z-index: -999;
