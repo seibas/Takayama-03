@@ -5,7 +5,7 @@
    align-items: center;
     width: 100vw;
        display: flex;
-       min-height: 3vh;
+       min-height: 5vh;
        flex-direction: column;
        background: black;
      z-index: -999;
@@ -14,4 +14,8 @@
        top: 0;
        left: 0;
    
+   }
+   .navbar-item{
+     color: red;
+     background-color: blue;
    }

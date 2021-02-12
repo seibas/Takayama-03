@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
 import Layout from '../components/Layout'
-import nature from "../images/nature.jpg"
 
 
 const NatureImage = styled(Image)`
@@ -14,7 +13,7 @@ max-width: 400px;
     margin-top: 20px;
     border-radius: 10px;
     background-color: rgb(255, 156, 64);
-    padding: 0.21rem;
+ 
 
 
 `
@@ -32,7 +31,7 @@ const index = ({ data }) => {
       <span class="change">m</span>
       <span class="change">e</span>  
        <NatureImage fluid={data.file.childImageSharp.fluid} alt="Nature" />
-       <p>Welcome to {data.site.siteMetadata.title}!</p>
+       <p className= { "natureTitle" }>Welcome to {data.site.siteMetadata.title}!</p>
    </Layout>
   )
 }
@@ -48,7 +47,7 @@ export const query = graphql`
         title
       }
     }
-    file(relativePath: { eq: "../images/nature.jpg" }) {
+    file(relativePath: { eq: "images/nature.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
