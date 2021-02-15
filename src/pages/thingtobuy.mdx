@@ -18,16 +18,20 @@ import { Link } from "gatsby"
 
 export const pageQuery = graphql`
 query {
-  allMdx(limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
+  allMdx(limit: 8, 
+  sort: { fields: frontmatter___date, order: DESC }
+  filter: { fileAbsolutePath: {regex: "//contents/events//" } }
+  ) {
     nodes {
       excerpt
       fields {
         slug
       }
       frontmatter {
+        date
         title
         category
-        date
+       
       }
       id
     }

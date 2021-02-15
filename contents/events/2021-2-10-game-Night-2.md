@@ -2,6 +2,7 @@
 date: "2021-2-10"
 title: "Game Night second time"
 category: "game night"
+banner: "./turtle.jpg"
 ---
 
 **Game Night: Thor**
