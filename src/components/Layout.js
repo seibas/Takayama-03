@@ -29,7 +29,7 @@ export default function Layout({ children }) {
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
           <ListLink to="/thingtodo/">Todo</ListLink>
-          <ListLink to="/thingtobuy/">Shopping</ListLink>
+          <ListLink to="/blog/">Blog</ListLink>
         </ul>
       </nav>
       {children}

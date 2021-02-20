@@ -20,6 +20,14 @@ const index = ({ data }) => {
       <span class="change">e</span>  
        <BannerImageFluid fluid={data.file.childImageSharp.fluid} alt="Nature" />
        <p className= { "natureTitle" }>Welcome to {data.site.siteMetadata.title}!</p>
+       <main>
+<div className= { "postCard" }>card 1</div>
+<div className= { "postCard" }>card 2</div>
+<div className= { "postCard" }>card 3</div>
+<div className= { "postCard" }>card 4</div>
+<div className= { "postCard" }>card 5</div>
+<div className= { "postCard" }>card 6</div>
+       </main>
    </Layout>
   )
 }

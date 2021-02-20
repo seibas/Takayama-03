@@ -4,8 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 
 const FooterRaper = styled.div`
-background-color: black;
-position:absolute;
+
+position: relative;
 bottom: 0;
 padding:20px;
  min-height: 21vh;
@@ -16,8 +16,8 @@ text-align:center;
         align-items: center;
 left:0;
         width: 100%;
- 
-
+ background-color: black;
+z-index:999;
 `
 
 
@@ -37,7 +37,7 @@ query {
 `
 )
     return (
-        <FooterRaper>
+        <FooterRaper className={ "footer" }>
             <p>This is the Footer</p>
             <h2 className={ 'title' }> {data.site.siteMetadata.title}</h2>
             <h2 className={ 'description' }> {data.site.siteMetadata.description}</h2>
