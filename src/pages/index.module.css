@@ -1,0 +1,22 @@
+.cardContainer{
+    display: grid;
+    padding: 1rem;
+    justify-content: space-between;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(0, 0, 0);
+  height: 450px;
+  }
+  
+  .postCard {
+    
+    background-color: rgb(255, 255, 255);
+   
+  }
+  
+  @media (max-width: 575px) {
+  
+  main{
+      grid-template-columns: 1fr;
+  }
+  }

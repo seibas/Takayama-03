@@ -1,0 +1,21 @@
+.footerContainer {
+    position: relative;
+    bottom: 0;
+    padding: 20px;
+    min-height: 21vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+.titleFooter {
+    font-size: 3rem;
+    color: rgb(228, 156, 0);
+
+}

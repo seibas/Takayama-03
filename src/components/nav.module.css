@@ -1,0 +1,40 @@
+.navContainer{
+
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 3rem 2rem 2rem;
+    font-size: 2rem;
+ 
+}
+
+.navContainer a {
+padding-left: 0.1rem;
+ line-height: 1;
+font-weight: bold;
+}
+.mainContainer{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+margin: 3rem auto;
+max-width: 650px;
+padding: 0 1rem;
+
+
+}
+
+.articleContainer{
+    flex: 1;
+    margin-top: 2rem;
+}
+h1{
+
+    padding: 2rem;
+}

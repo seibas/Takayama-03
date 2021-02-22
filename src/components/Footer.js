@@ -1,23 +1,12 @@
 import React from 'react'
 import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby"
+import footerStyles from "../components/Footer.module.css"
 
 
 const FooterRaper = styled.div`
 
-position: relative;
-bottom: 0;
-padding:20px;
- min-height: 21vh;
-text-align:center;
- display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-left:0;
-        width: 100%;
- background-color: black;
-z-index:999;
+
 `
 
 
@@ -37,9 +26,9 @@ query {
 `
 )
     return (
-        <FooterRaper className={ "footer" }>
+        <FooterRaper className={ footerStyles.footerContainer }>
             <p>This is the Footer</p>
-            <h2 className={ 'title' }> {data.site.siteMetadata.title}</h2>
+            <h2 className={ footerStyles.titleFooter }> {data.site.siteMetadata.title}</h2>
             <h2 className={ 'description' }> {data.site.siteMetadata.description}</h2>
         </FooterRaper>
       

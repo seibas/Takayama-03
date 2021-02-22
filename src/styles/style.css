@@ -12,6 +12,9 @@
 
 html {
 
+display: flex;
+justify-content: center;
+
   font-family: 'IBM Plex Mono', monospace;
   box-sizing: border-box;
   font-size: 16px;
@@ -31,13 +34,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   text-rendering: optimizeLegibility;
   border: 0;
   font: inherit;
- 
   vertical-align: baseline;
 
 }
 body{
   line-height: 1;
-
+ 
 }
 
 p{
@@ -59,7 +61,7 @@ a{
   font-size: 16px;
 }
 .description{
-  background-color: rgb(0, 0, 0);
+  
   color: var(--text-color);
   font-size: 18px;
 }
@@ -84,31 +86,9 @@ margin: 0.5rem;
 .navbar-item{
   color: red;
 }
-main{
-  display: grid;
-  padding: 1rem;
-  justify-content: space-between;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgb(229, 229, 240);
-height: 950px;
-}
-.footer{
-width: 100%;
-position:absolute;
-top: +40vh;
 
- 
-}
-.postCard {
-  
-  background-color: darkgoldenrod;
- 
-}
 
-@media (max-width: 575px) {
+li{
+margin-top: 1.5rem ;
 
-main{
-    grid-template-columns: 1fr;
-}
 }
