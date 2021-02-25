@@ -2,6 +2,7 @@
 date: "2021-02-11"
 title: "Game Night third"
 category: "game night"
+banner: "./panorama.jpg"
 ---
 
 **Game Night: Thor**
