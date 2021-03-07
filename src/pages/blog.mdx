@@ -4,7 +4,7 @@
 title: "Events"
 ---
 
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 
 
@@ -21,9 +21,9 @@ import { Link } from "gatsby"
 
 export const pageQuery = graphql`
 query {
-  allMdx(limit: 8, 
-  sort: { fields: frontmatter___date, order: DESC }
-  filter: { fileAbsolutePath: {regex: "//contents/events//" } }
+  allMdx(
+  limit: 8, sort: { fields: frontmatter___date, order: DESC }
+  filter: { fileAbsolutePath: { regex: "//contents/events//" } }
   ) {
     nodes {
       excerpt
@@ -34,7 +34,6 @@ query {
         date
         title
         category
-       
       }
       id
     }

@@ -9,3 +9,4 @@ category: "game night"
 
 Join as at lodge to learn moore about the new game "Thor".
 Don't worry bring your friends with you .
+![Lady with laptop](./lady.jpg)

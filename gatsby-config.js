@@ -10,6 +10,8 @@ module.exports = {
     title: "BeBa",
     description: "webSite - in development",
     author: "Sebastiano Vitturi",
+    year: 2021,
+    image: 'images/nature.jpg'
   },
 
 
@@ -18,6 +20,7 @@ module.exports = {
   
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -39,8 +42,17 @@ path:`${__dirname}/contents/events/`,
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          default: require.resolve("./src/pages/markdownpage-template.js"),
+          default: require.resolve("./src/templates/markdownpage-template.js"),
         },
+        plugins: [`gatsby-remark-images`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 400,
+            }
+          }
+        ]
       },
     },
         `gatsby-plugin-styled-components`],

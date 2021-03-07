@@ -1,10 +1,12 @@
 import React from "react"
+
 import Header from "../components/Header"
 import { Link } from "gatsby"
 import Footer from "../components/Footer"
 import "../styles/style.css"
 import styled from "styled-components"
 import navStyles from "../components/nav.module.css"
+import SEO from "./SEO"
 
 const LogoImage = styled.img`
   max-width: 40px;
@@ -19,7 +21,14 @@ const ListLink = props => (
 )
 
 export default function Layout({ children }) {
+
+
+
+
+
   return (
+<>
+<SEO />
     <div className={navStyles.mainContainer}>
       <div className={navStyles.articleContainer}>
         <Header />
@@ -54,5 +63,6 @@ export default function Layout({ children }) {
       </div>
       <Footer />
     </div>
+    </>
   )
 }

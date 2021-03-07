@@ -5,8 +5,8 @@ import footerStyles from "../components/Footer.module.css"
 
 
 const FooterRaper = styled.div`
-
-
+display: flex;
+border-bottom: solid 2px #edf100;
 `
 
 
