@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby"
-import footerStyles from "../components/Footer.module.css"
+import footerStyles from "../components/footer.module.css"
 
 
 const FooterRaper = styled.div`
