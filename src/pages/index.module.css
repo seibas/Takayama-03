@@ -1,3 +1,4 @@
+
 .cardContainer{
     display: grid;
     padding: 1rem;
@@ -20,3 +21,9 @@
       grid-template-columns: 1fr;
   }
   }
+  @media (max-width: 575px) {
+  
+    h1{
+        font-size: 2rem;
+    }
+    }
